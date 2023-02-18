@@ -1,0 +1,112 @@
+/* 
+    Reset CSS
+*/
+
+* {
+    font-family: Poppins;
+}
+
+header {
+    background-color: rgb(219, 219, 219);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+svg {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input,
+textarea {
+    outline: 0;
+}
+
+ul,
+ol,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+cite {
+    font-style: normal;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/*
+    Customize CSS
+*/
+
+svg.active path {
+    color: blue !important;
+    fill: blue !important;
+}
+
+.grid-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0rem, 1fr));
+}
+
+.grid-list .card {
+    display: table-cell;
+    width: 100%;
+}
+
+.grid-list .card .card-header {
+    display:none !important;
+}
+
+.grid-list .card .card-footer {
+    display:none;
+}
